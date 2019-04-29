@@ -455,7 +455,7 @@ public class GameFunctions extends Board implements GameFunctionsInterface {
                 for (int i = 0; i < currentBoard.length; i++) {
                     for (int j = 0; j < currentBoard.length; j++) {
                         if (currentBoard[i][j].equals(point)) {
-                            checkSorroundingPlaces(currentBoard, currentTerritory, sign, point, i, j);
+                            checkSurroundingPlaces(currentBoard, currentTerritory, sign, point, i, j);
                         }
                     }
                 }
@@ -471,7 +471,7 @@ public class GameFunctions extends Board implements GameFunctionsInterface {
     }
 
     //Metoda sprawdza otaczające punkty, jeżeli nie ma na nich kamieni przeciwnika, dodaje punkt do terytorium gracza
-    private void checkSorroundingPlaces(String[][] currentBoard, List<String> currentTerritory, String sign, String point, int i, int j) {
+    private void checkSurroundingPlaces(String[][] currentBoard, List<String> currentTerritory, String sign, String point, int i, int j) {
         if (i > 0 && j > 0 && i < currentBoard.length - 1 && j < currentBoard.length - 1) {
             if (!currentBoard[i + 2][j].equals(sign) && !currentBoard[i - 2][j].equals(sign) && !currentBoard[i][j + 2].equals(sign) && !currentBoard[i][j - 2].equals(sign)) {
                 currentTerritory.add(point);
