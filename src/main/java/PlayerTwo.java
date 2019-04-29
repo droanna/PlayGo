@@ -8,6 +8,10 @@ public class PlayerTwo extends Player {
         this.id = "P02";
     }
 
+    public PlayerTwo() {
+        this.id = "P02";
+    }
+
     @Override
     public String getId() {
         return "P02";

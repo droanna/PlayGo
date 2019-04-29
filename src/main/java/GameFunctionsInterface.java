@@ -1,6 +1,6 @@
 import java.util.List;
 
-public interface PrintBoardInterface {
+public interface GameFunctionsInterface {
 
     void printBoard(String[][] boardArray);
     String[][] currentBoard(String[][] currentBoard, Player player, String point);

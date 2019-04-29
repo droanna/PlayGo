@@ -5,7 +5,7 @@ public class Main {
     private static PlayerOne playerOne;
     private static PlayerTwo playerTwo;
     private static Game game = new Game();
-    private static PrintBoard printBoard = new PrintBoard();
+    private static GameFunctions gameFunctions = new GameFunctions();
     private static final Scanner SCANNER = new Scanner(System.in);
     private static Player player = new Player() {};
 
@@ -22,12 +22,12 @@ public class Main {
         System.out.println("Gracz 2: Podaj imię:");
         String playerTwoName = SCANNER.next();
 
-        String[][] board = printBoard.board(size - 1);
-        String[][] currentBoard = printBoard.board(size - 1);
-        String[][] boardTwoMovesBefore = printBoard.board(size - 1);
-        String[][] boardOneMoveBefore = printBoard.board(size - 1);
+        String[][] board = gameFunctions.board(size - 1);
+        String[][] currentBoard = gameFunctions.board(size - 1);
+        String[][] boardTwoMovesBefore = gameFunctions.board(size - 1);
+        String[][] boardOneMoveBefore = gameFunctions.board(size - 1);
         System.out.println("Plansza:");
-        printBoard.printBoard(board);
+        gameFunctions.printBoard(board);
         System.out.println();
 
 
