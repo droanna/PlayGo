@@ -1,7 +1,6 @@
 # PlayGo
 
 
-Gra Go
 System do gry w Go na zasadach japońskich.
 
 W grze uczestniczy dwóch graczy. Gra toczy się na planszy (goban) będącej siatką 19 poziomych i 19
